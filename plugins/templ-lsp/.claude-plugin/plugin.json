@@ -1,0 +1,9 @@
+{
+       "name": "templ-lsp",
+       "description": "Templ language server for Go HTML templating",
+       "version": "1.0.0",
+       "author": {
+              "name": "Piszmog"
+       },
+       "repository": "https://github.com/Piszmog/claude-plugins-custom"
+}

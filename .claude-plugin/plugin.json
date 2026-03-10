@@ -1,0 +1,5 @@
+{
+       "name": "claude-plugins-custom",
+       "description": "Custom LSP plugins for Claude Code",
+       "version": "1.0.0"
+}

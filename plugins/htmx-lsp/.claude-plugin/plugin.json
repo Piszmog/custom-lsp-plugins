@@ -1,0 +1,9 @@
+{
+       "name": "htmx-lsp",
+       "description": "HTMX language server for hx-* attribute completions",
+       "version": "1.0.0",
+       "author": {
+              "name": "Piszmog"
+       },
+       "repository": "https://github.com/Piszmog/claude-plugins-custom"
+}
