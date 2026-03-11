@@ -1,0 +1,11 @@
+{
+  "tailwindcss": {
+    "command": "tailwindcss-language-server",
+    "args": ["--stdio"],
+    "extensionToLanguage": {
+      ".html": "html",
+      ".templ": "templ",
+      ".css": "css"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "templ": {
+    "command": "templ",
+    "args": ["lsp"],
+    "extensionToLanguage": {
+      ".templ": "templ"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "htmx": {
+    "command": "htmx-lsp",
+    "extensionToLanguage": {
+      ".html": "html",
+      ".templ": "templ"
+    }
+  }
+}

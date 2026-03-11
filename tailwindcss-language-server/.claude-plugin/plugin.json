@@ -1,9 +1,9 @@
 {
-       "name": "tailwindcss-lsp",
+       "name": "tailwindcss-language-server",
        "description": "TailwindCSS language server for class completions and diagnostics",
        "version": "1.0.0",
        "author": {
               "name": "Piszmog"
        },
-       "repository": "https://github.com/Piszmog/claude-plugins-custom"
+       "repository": "https://github.com/Piszmog/custom-lsp-plugins"
 }

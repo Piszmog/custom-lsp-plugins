@@ -1,80 +1,47 @@
 {
-       "name": "custom-lsp-plugins",
-       "description": "Custom LSP plugins for Claude Code",
-       "owner": {
-              "name": "Piszmog"
-       },
-       "metadata": {
-              "description": "Custom LSP plugins for Claude Code",
-              "version": "1.0.0",
-              "pluginRoot": "./plugins"
-       },
-       "plugins": [
-              {
-                     "name": "templ-lsp",
-                     "description": "Templ language server for Go HTML templating",
-                     "version": "1.0.0",
-                     "author": {
-                            "name": "Piszmog"
-                     },
-                     "source": "./plugins/templ-lsp",
-                     "category": "development",
-                     "strict": false,
-                     "lspServers": {
-                            "templ": {
-                                   "command": "templ",
-                                   "args": [
-                                          "lsp"
-                                   ],
-                                   "extensionToLanguage": {
-                                          ".templ": "templ"
-                                   }
-                            }
-                     }
-              },
-              {
-                     "name": "tailwindcss-lsp",
-                     "description": "TailwindCSS language server for class completions and diagnostics",
-                     "version": "1.0.0",
-                     "author": {
-                            "name": "Piszmog"
-                     },
-                     "source": "./plugins/tailwindcss-lsp",
-                     "category": "development",
-                     "strict": false,
-                     "lspServers": {
-                            "tailwindcss": {
-                                   "command": "tailwindcss-language-server",
-                                   "args": [
-                                          "--stdio"
-                                   ],
-                                   "extensionToLanguage": {
-                                          ".html": "html",
-                                          ".templ": "templ",
-                                          ".css": "css"
-                                   }
-                            }
-                     }
-              },
-              {
-                     "name": "htmx-lsp",
-                     "description": "HTMX language server for hx-* attribute completions",
-                     "version": "1.0.0",
-                     "author": {
-                            "name": "Piszmog"
-                     },
-                     "source": "./plugins/htmx-lsp",
-                     "category": "development",
-                     "strict": false,
-                     "lspServers": {
-                            "htmx": {
-                                   "command": "htmx-lsp",
-                                   "extensionToLanguage": {
-                                          ".html": "html",
-                                          ".templ": "templ"
-                                   }
-                            }
-                     }
-              }
-       ]
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "custom-lsp-plugins",
+  "description": "Custom LSP plugins for Claude Code",
+  "owner": {
+    "name": "Piszmog"
+  },
+  "metadata": {
+    "description": "Custom LSP plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "templ",
+      "description": "Templ language server for Go HTML templating",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piszmog"
+      },
+      "source": "./templ",
+      "category": "development",
+      "tags": ["go", "templ", "lsp"]
+    },
+    {
+      "name": "tailwindcss-language-server",
+      "description": "TailwindCSS language server for class completions and diagnostics",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piszmog"
+      },
+      "source": "./tailwindcss-language-server",
+      "category": "development",
+      "tags": ["css", "tailwind", "lsp"]
+    },
+    {
+      "name": "htmx-lsp",
+      "description": "HTMX language server for hx-* attribute completions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piszmog"
+      },
+      "source": "./htmx-lsp",
+      "category": "development",
+      "tags": ["htmx", "html", "lsp"]
+    }
+  ]
 }
