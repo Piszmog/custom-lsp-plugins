@@ -1,0 +1,8 @@
+{
+  "sqls": {
+    "command": "sqls",
+    "extensionToLanguage": {
+      ".sql": "sql"
+    }
+  }
+}

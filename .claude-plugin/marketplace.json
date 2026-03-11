@@ -42,6 +42,17 @@
       "source": "./htmx-lsp",
       "category": "development",
       "tags": ["htmx", "html", "lsp"]
+    },
+    {
+      "name": "sqls",
+      "description": "SQL language server for completions, hover, and diagnostics",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piszmog"
+      },
+      "source": "./sqls",
+      "category": "development",
+      "tags": ["sql", "database", "lsp"]
     }
   ]
 }
