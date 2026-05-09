@@ -1,6 +1,6 @@
 # Custom LSP Plugins for Claude Code
 
-LSP plugin wrappers that give Claude Code language intelligence for templ, TailwindCSS, and HTMX.
+LSP plugin wrappers that give Claude Code language intelligence for templ, TailwindCSS, HTMX, sqls, and zls.
 
 ## Plugins
 
@@ -10,6 +10,7 @@ LSP plugin wrappers that give Claude Code language intelligence for templ, Tailw
 | `tailwindcss-language-server` | TailwindCSS class completions and diagnostics | `.html`, `.templ`, `.css` |
 | `htmx-lsp` | HTMX `hx-*` attribute completions | `.html`, `.templ` |
 | `sqls` | SQL completions, hover, and diagnostics via [sqls](https://github.com/sqls-server/sqls) | `.sql` |
+| `zls` | Zig language server via [zls](https://github.com/zigtools/zls) | `.zig`, `.zon` |
 
 ## Install
 
@@ -19,6 +20,7 @@ LSP plugin wrappers that give Claude Code language intelligence for templ, Tailw
 /plugin install htmx-lsp@custom-lsp-plugins
 /plugin install tailwindcss-language-server@custom-lsp-plugins
 /plugin install sqls@custom-lsp-plugins
+/plugin install zls@custom-lsp-plugins
 ```
 
 ## Prerequisites
@@ -31,3 +33,4 @@ Each plugin requires its LSP binary on your `PATH`. Install them with your prefe
 | `tailwindcss-language-server` | `npm install -g @tailwindcss/language-server` | `:MasonInstall tailwindcss-language-server` |
 | `htmx-lsp` | `cargo install htmx-lsp` | `:MasonInstall htmx-lsp` |
 | `sqls` | `go install github.com/sqls-server/sqls@latest` | `:MasonInstall sqls` |
+| `zls` | See https://zigtools.org/zls/install/ | `:MasonInstall zls` |

@@ -1,6 +1,6 @@
 # custom-lsp-plugins
 
-Claude Code LSP plugin wrappers for templ, TailwindCSS, and HTMX. This is a purely declarative JSON config project — no build, test, or lint steps.
+Claude Code LSP plugin wrappers for templ, TailwindCSS, HTMX, sqls, and zls. This is a purely declarative JSON config project — no build, test, or lint steps.
 
 ## Architecture
 
@@ -32,6 +32,20 @@ htmx-lsp/
     hooks.json
     check-htmx-lsp.sh
   README.md
+sqls/
+  .claude-plugin/plugin.json
+  .lsp.json
+  hooks/
+    hooks.json
+    check-sqls.sh
+  README.md
+zls/
+  .claude-plugin/plugin.json
+  .lsp.json
+  hooks/
+    hooks.json
+    check-zls.sh
+  README.md
 ```
 
 ## Adding a New Plugin
@@ -56,7 +70,7 @@ htmx-lsp/
      "description": "...",
      "version": "1.0.0",
      "author": { "name": "Piszmog" },
-     "repository": "https://github.com/Piszmog/claude-plugins-custom"
+     "repository": "https://github.com/Piszmog/custom-lsp-plugins"
    }
    ```
 
@@ -93,3 +107,5 @@ Each plugin delegates to an external LSP binary that must be installed separatel
 | templ-lsp | `templ` | `go install github.com/a-h/templ/cmd/templ@latest` |
 | tailwindcss-lsp | `tailwindcss-language-server` | `npm install -g @tailwindcss/language-server` |
 | htmx-lsp | `htmx-lsp` | `cargo install htmx-lsp` |
+| sqls-lsp | `sqls` | `go install github.com/sqls-server/sqls@latest` |
+| zls-lsp | `zls` | See https://zigtools.org/zls/install/ |

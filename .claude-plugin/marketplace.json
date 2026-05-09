@@ -53,6 +53,17 @@
       "source": "./sqls",
       "category": "development",
       "tags": ["sql", "database", "lsp"]
+    },
+    {
+      "name": "zls",
+      "description": "Zig language server for completions, hover, and diagnostics",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piszmog"
+      },
+      "source": "./zls",
+      "category": "development",
+      "tags": ["zig", "ziglang", "lsp"]
     }
   ]
 }

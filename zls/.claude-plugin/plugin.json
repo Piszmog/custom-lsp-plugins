@@ -1,0 +1,9 @@
+{
+  "name": "zls",
+  "description": "Zig language server for completions, hover, and diagnostics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Piszmog"
+  },
+  "repository": "https://github.com/Piszmog/custom-lsp-plugins"
+}
